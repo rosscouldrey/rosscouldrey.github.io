@@ -28,7 +28,7 @@ twitter_username: none
 github_username:  rosscouldrey
 
 # Build settings
-theme: jekyll-theme-tactile
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
