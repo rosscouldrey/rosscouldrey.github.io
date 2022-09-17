@@ -4,7 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Welcome to my GitHub Pages Blog site powered by [jekyllrb.com](https://jekyllrb.com/).
+
+I am a data enthusiast who blogs about tips and tricks for Microsoft data products; focused mostly on PowerBI and Synapse Analytics.
+
+Please feel free to check out my github page for more code samples and architectures;
+[RossCouldrey @ Github](https://github.com/rosscouldrey)
 
 You can find the source code for Minima at GitHub:
 [jekyll][jekyll-organization] /

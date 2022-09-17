@@ -127,7 +127,7 @@ We can confirm query folding is occurring by viewing the native query in PowerBI
 
 Alternatively, we can check the logs at our source to view the query it receives from PowerBI. In my Synapse instance I can see PowerBI issue a query with the appropriate “where” clause.
 
-![SynapseQueryFolding](/assets/images/PBI%20Data%20Lakehouse/query%20folding.png)
+![SynapseQueryFolding](/assets/images/PBI%20Data%20Lakehouse/query%20folding.png){: width="500"}
 
 Great! So now we have a PowerBI query that folds to Synapse Serverless SQL and we can incrementally load our fact data. 
 
