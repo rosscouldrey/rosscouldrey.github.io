@@ -1,10 +1,12 @@
 ---
-layout: post
+layout: single
 title: PowerBI Incremental Refresh in the Age of Data Lake Houses
 date: 2022-03-31
 comments: true
 category: PowerBI
 tags: PowerBI Synapse Lakehouse
+toc: true
+toc_label: "Skip to section"
 excerpt_separator: <!--more-->
 ---
 
