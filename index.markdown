@@ -6,4 +6,5 @@ layout: home
 author_profile: true
 ---
 
-This is a test to see what happens
+#### Welcome to my data blog.  
+Grab a coffee, pick a blog, and lose yourself in a world of data.

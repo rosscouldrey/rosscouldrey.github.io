@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Ross Couldrey - GitHub Pages
+title: Ross Couldrey - Data Blogs
 email: notanemail@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Sample write up
@@ -38,13 +38,16 @@ plugins:
 
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/cartoon Ross.png"
-  bio              : "Some lame description"
+  avatar           : "/assets/images/RossAvatar.png"
+  bio              : ""
   location         : "Great White North"
   links:
   - label: "GitHub"
     icon: "fab fa-fw fa-github"
     url: "https://github.com/rosscouldrey"
+  - label: "LinkedIn"
+    icon: "fab fa-linkedin"
+    url: "http://linkedin.com/rosscouldrey"
 
 
 defaults:
