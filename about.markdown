@@ -6,7 +6,7 @@ permalink: /about/
 
 Welcome to my GitHub Pages Blog site powered by [jekyllrb.com](https://jekyllrb.com/).
 
-I am a data enthusiast who blogs about tips and tricks for Microsoft data products; focused mostly on PowerBI and Synapse Analytics.
+I am a Microsoft Employee and a data enthusiast who blogs about tips and tricks for Microsoft data products; focused mostly on PowerBI and Synapse Analytics.
 
 Please feel free to check out my github page for more code samples and architectures;
 [RossCouldrey @ Github](https://github.com/rosscouldrey)
