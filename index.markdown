@@ -4,6 +4,7 @@
 
 layout: home
 author_profile: true
+paginator: true
 ---
 
 #### Welcome to my data blog.  

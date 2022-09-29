@@ -21,7 +21,7 @@
 title: Ross Couldrey - Data Blogs
 email: notanemail@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Sample write up
+  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: none
@@ -35,11 +35,12 @@ minimal_mistakes_skin: "air" #"default", "air", "aqua", "contrast", "dark", "dir
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-seo-tag
 
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : "/assets/images/RossAvatar.png"
-  bio              : ""
+  bio              : "Ross Couldrey is a [Cloud Solution Architect (CSA)](https://www.microsoft.com/en-us/leap/pathways/cloud-solution-architect/) working at [Microsoft](https://www.microsoft.com/en-ca/), focused on Data and AI."
   location         : "Great White North"
   links:
   - label: "GitHub"
@@ -61,7 +62,7 @@ defaults:
       read_time: true
       comments: true
       share: true
-      related: true
+      #related: true
   # _pages
   - scope:
       path: "_pages"
