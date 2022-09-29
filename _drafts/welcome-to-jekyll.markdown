@@ -3,6 +3,17 @@ layout: single
 title:  "Welcome to Jekyll!"
 date:   2022-08-10 08:27:37 -0400
 categories: jekyll update
+#tagline: This is a custom tagline for the header which overrides the excerpt
+header:
+#    overlay_image: /assets/images/PBI%20Dynamic%20Data%20Masking/Unleash%20True%20Power%20with%20PII%20Entity%20Recognition.png
+#    overlay_color: black
+#    overlay_filter: 0.5
+#    caption: "photo credit.."
+    actions:
+      - label: "more info"
+        url: "https://www.bing.com"
+        
+#excerpt: This is a test excerpt that will show as the description of the post in the main page.
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
