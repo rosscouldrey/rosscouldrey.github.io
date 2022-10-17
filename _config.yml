@@ -40,7 +40,7 @@ plugins:
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : "/assets/images/RossAvatar.png"
-  bio              : "Ross Couldrey is a [Cloud Solution Architect (CSA)](https://www.microsoft.com/en-us/leap/pathways/cloud-solution-architect/) working at [Microsoft](https://www.microsoft.com/en-ca/), focused on Data and AI."
+  bio              : "I am a [Cloud Solution Architect (CSA)](https://www.microsoft.com/en-us/leap/pathways/cloud-solution-architect/) working at [Microsoft](https://www.microsoft.com/en-ca/), focused on Data and AI."
   location         : "Great White North"
   links:
   - label: "GitHub"

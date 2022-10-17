@@ -1,13 +1,15 @@
 ---
-layout: posts
+#layout: posts
 title: PowerBI Incremental Refresh in the Age of Data Lake Houses
 date: 2022-03-31
 author: Ross Couldrey
 comments: true
 categories: [PowerBI, Synapse]
 tags: [PowerBI, Synapse, Lakehouse]
-toc: true
-toc_label: "Skip to section"
+#author_profile: true
+#classes: wide
+#toc: true
+#toc_label: "Skip to section"
 excerpt_separator: <!--more-->
 ---
 
