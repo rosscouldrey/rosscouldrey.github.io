@@ -27,20 +27,26 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: none
 github_username:  rosscouldrey
 
+masthead_title: "Ross Couldrey's Data Blog"
+
 # Build settings
 #theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "air" #"default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dark" #"default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-seo-tag
+  #- jekyll-paginate
+  - jekyll-sitemap
+
+google_analytics: UA-249360800-1
 
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : "/assets/images/RossAvatar.png"
-  bio              : "I am a [Cloud Solution Architect (CSA)](https://www.microsoft.com/en-us/leap/pathways/cloud-solution-architect/) working at [Microsoft](https://www.microsoft.com/en-ca/), focused on Data and AI."
+  bio              : "I am a [Cloud Solution Architect (CSA)](https://www.microsoft.com/en-us/leap/pathways/cloud-solution-architect/) working at [Microsoft](https://www.microsoft.com/en-ca/), focused on Data and AI with a keen interest in anything PowerBI related."
   location         : "Great White North"
   links:
   - label: "GitHub"
@@ -62,7 +68,7 @@ defaults:
       read_time: true
       comments: true
       share: true
-      #related: true
+      related: true
   # _pages
   - scope:
       path: "_pages"
@@ -101,3 +107,10 @@ defaults:
 
 include:
 - _pages
+
+#site settings
+#permalink: /:title/
+markdown: kramdown
+#paginate: 5
+#paginate_path: "/:num/"
+date_format: "%b %-d, %Y"
