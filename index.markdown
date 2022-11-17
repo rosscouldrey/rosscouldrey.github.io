@@ -4,8 +4,21 @@
 
 layout: home
 author_profile: true
-paginator: true
+#paginator: true
 ---
 
-#### Welcome to my data blog.  
-Grab a coffee, pick a blog, and lose yourself in a world of data.
+#### Ross Couldrey's Data Blog.  
+You like data?  I like data!  We should be friends.
+
+#### What's this all about?
+From time to time I'm asked questions by customers, colleagues, friends, etc.  Usually these questions aren't unique.
+
+Othertimes I think of interesting things to do with the products I'm working on.
+
+This blog is my written record of the quesitons I've answered and the things I've done so that others can learn and reuse this information to increase their skills and capabilities.  It's my attempt to give back to a community of people that have helped me grow and learn over the years. 
+
+**After all, knowledge should be free.**
+
+Check out my recent posts below or use the Catories, Tags, or Search capability in the menu bar to help you navigate to what you're looking for.  
+
+Happy reading!
