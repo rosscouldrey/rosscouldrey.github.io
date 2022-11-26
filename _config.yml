@@ -41,7 +41,7 @@ plugins:
   #- jekyll-paginate
   - jekyll-sitemap
 
-google_analytics: UA-249360800-1
+google_analytics: G-FD9VZV17S3
 
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
