@@ -1,6 +1,6 @@
 ---
 #layout: post
-title: Demystifying PowerBI Licensing
+title: Demystifying PowerBI Licensing Part 1 - The Main Concepts
 date: 2022-11-03
 author: Ross Couldrey
 comments: true
