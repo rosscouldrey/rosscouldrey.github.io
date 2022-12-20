@@ -37,7 +37,7 @@ This is the second article in my PowerBI licensing simplification series, and th
 
 I'm going to be honest with you here, most of the confusion I see around Premium Capacity licensing stems from a simple naming convention.  
 
-The Premium Capacity SKU you purchase (P1/P2/P3/P4/P5) has the same name(s) as the SKU you deploy.  And this can be very misleading.  Because they aren't the same.  They are however directly related.
+The Premium Capacity SKU you purchase (P1/P2/P3/P4/P5) has the same name(s) as the capacity you deploy.  And this can be very misleading.  Because they aren't the same.  They are however directly related.
 
 For the moment I want you to completely separate the process of purchasing from the process of deploying in your mind.  Consider this pattern instead;
 
