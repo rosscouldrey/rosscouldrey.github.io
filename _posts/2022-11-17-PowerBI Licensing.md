@@ -196,7 +196,7 @@ You should also know that most customer environments I deal with have a mix of t
 2. PowerBI Pro licensing for all internal users that require edit/create rights.  I often find this is licensed through M365 bundles.
 3. PowerBI Premium Per User licenses for a select set of PowerBI developers.  Usually the BI team, or similar, who are creating the business critical reports that will reside on the Premium Capacity in production.
 
-For those that want to get a little deeper, check out my blog on vCore pooling and PowerBI Premium capacities.
+For those that want to get a little deeper, check out my blog on [vCore pooling and PowerBI Premium capacities](https://rosscouldrey.github.io/powerbi/2022/12/19/vCore-Pooling.html).
 
 ## Resources
 
