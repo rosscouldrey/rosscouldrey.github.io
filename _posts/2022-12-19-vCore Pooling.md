@@ -1,6 +1,6 @@
 ---
 #layout: single
-title: vCore Pooling - Understanding Premium Capacity Licensing and Deployment
+title: Demystifying PowerBI Licensing Part 2 - vCore Pools and Premium Capacities
 date: 2022-12-19
 author: Ross Couldrey
 comments: true
