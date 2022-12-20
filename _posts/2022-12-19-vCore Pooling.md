@@ -20,12 +20,12 @@ Once upon a time, in the land of PowerBI Premium, if you purchased a P1 SKU, you
 <!--more-->
 
 But what if you already owned a P1 capacity license, and you needed to scale up to a P2 sized capacity?  Well, in the imaginary simple world above where you can only buy licensing in the same distinct units as you can deploy capacities, then I suppose the answer would be;
-1. Decomission your P1 capacity, 
+1. Decommission your P1 capacity, 
 2. return your P1 license, 
 3. buy a P2 license, then 
 4. deploy your P2 capacity.
 
-That's a lot of work isn't it?  Seems completely unneccessary to me.  
+That's a lot of work isn't it?  Seems completely unnecessary to me.  
 
 In a cloud world, scaling should be easy.  We should be able move from a P1 capacity to a P2 capacity quickly and easily.  It should be a matter of simply procuring more licenses and then resizing our capacity shouldn't it?  
 
@@ -41,9 +41,9 @@ The Premium Capacity SKU you purchase (P1/P2/P3/P4/P5) has the same name(s) as t
 
 For the moment I want you to completely separate the process of purchasing from the process of deploying in your mind.  Consider this pattern instead;
 
-1. you buy something (ie. Purchase a license), 
-2. it sits on a shelf or in storage untill you need it (ie. vCore Pool), and then 
-3. you use the item (ie. Deploy Capacity).
+1. you buy something (i.e. Purchase a license), 
+2. it sits on a shelf or in storage until you need it (i.e. vCore Pool), and then 
+3. you use the item (i.e. Deploy Capacity).
 
 ### The Building Block Analogy
 
@@ -51,23 +51,29 @@ I've had a lot of success explaining this concept to my customers and colleagues
 
 The Building Block Analogy works like this:
 
-1. In my simple world, there are only 5 boxes of blocks that can be purchased.  Each box has a different number of blocks inside.
-- Box 1: 8 blocks for $100
-- Box 2: 16 blocks for $200
-- Box 3: 32 blocks for $400
-- Box 4: 64 blocks for $800
-- Box 5: 128 blocks for $1,600
+There are only 5 boxes of blocks that can be purchased.  Each box has a different number of blocks inside. Box sizes are multiples of 8.
 
-2. Also, there are only 5 types of towers that can be built with the blocks.
-- Tower 1: 8 blocks high
-- Tower 2: 16 blocks high
-- Tower 3: 32 blocks high
-- Tower 4: 64 blocks high
-- Tower 5: 128 blocks high
+|  Box    | # Blocks in Box | Cost of Box|
+|-------|----------------|-----------|
+|Box 1 | 8  | $100 |
+|Box 2 | 16 | $200 |
+|Box 3 | 32 | $400 |
+|Box 4 | 64 | $800 |
+|Box 5 | 128 | $1,600 |
 
-3) You have 1 storage box to hold your blocks and you must open each box and place the pieces your storage box as soon as you buy it.
+Also, there are only 5 types of towers that can be built with the blocks.
 
-#### The scenario
+|  Tower    | Height of Tower |
+|------|----------------|
+|Tower 1 | 8 blocks |
+|Tower 2 | 16 blocks |
+|Tower 3 | 32 blocks |
+|Tower 4 | 64 blocks |
+|Tower 5 | 128 blocks |
+
+You have only 1 storage box to hold your blocks and you must open each box and place the pieces your storage box as soon as you buy it.
+
+#### Lets Build!
 
 We can imagine any number of scenarios (or permutations) of purchases and tower building, but lets start simple.
 
@@ -83,7 +89,7 @@ With unused blocks in my storage box, I can build again.  In fact I now have 2 o
 
 And lets say I take option 2 and build a 16 block tower. 
 
-Lets pause for a second and mention pricing here as well.  I now have a 16 block tower which cost me $200 ($100 x 2)  But what if I had bought 1 box of 16 blocks in the first place instead of buying 2 boxes of 8 blocks? That would also have cost me $200.  The same happens with Premium Capacities.
+Lets pause for a second and mention pricing here as well.  I now have a 16 block tower which cost me $200 ($100 x 2)  But what if I had bought 1 box of 16 blocks in the first place instead of buying 2 boxes of 8 blocks? That would also have cost me $200.  In fact, any configuration of purchasing and deploying that requires the same number of blocks should work out to the same cost.{: .notice--warning}
 
 #### Putting blocks back in the storage box
 
@@ -97,12 +103,12 @@ We can scale this analogy to various scenarios, but the key to remember is:
 
 1. You buy blocks in predetermined quantities (of which there are currently 5,and they are multiples of 8), but they all accumulate in the storage box awaiting use.
 2. You can construct towers of predefined sizes based on the blocks you have available in your storage box.  Currently there are 5 tower sizes available also in multiples of 8.
-3. When you destory towers, the blocks simply go back into the storage box for reuse in another tower later.
+3. When you destroy towers, the blocks simply go back into the storage box for reuse in another tower later.
 
 So how does that map to PowerBI Premium Capacities?  I hope you can see it already....
 
-vCores can be thought of as the bulding blocks.
-The vCore pool is simply a storage bin that holds blocks you have purchased but are not currently in use in any tower constuction.
+vCores can be thought of as the building blocks.
+The vCore pool is simply a storage bin that holds blocks you have purchased but are not currently in use in any tower construction.
 And the towers, they represent the Premium Capacities (available in 5 sizes).
 
 Simple right?
@@ -115,11 +121,15 @@ Lets apply the pattern to an example customer Contoso who purchased the followin
 
 So Contoso now has 48 vCores in their vCore pool which they can use to deploy Premium Capacities.
 
-![vCore Pooling Picture](/assets/images/vCorePoolPic.png)
-
 Now, with a vCore pool of 48 vCores, Contoso can deploy a number of different configurations of Premium Capacities.
 
-In this example, they have deployed a single P1 capacity (which requires 8 vCores), and a single P2 capacity (which requires 16 vCores).  They have deployed 24 of their 48 vCores, and the pool has 24 remaining vCores with which Contoso can deploy more Premium Capacities, or simply use them to increase the size of existing capacities.
+![vCore Pooling Picture](/assets/images/vCorePoolPic_whtBG.png)
+
+In the example pictured above, they have deployed 
+- a single P1 capacity (which requires 8 vCores), and 
+- a single P2 capacity (which requires 16 vCores).  
+
+They have deployed 24 of their 48 vCores, and the pool has 24 remaining vCores with which Contoso can deploy more Premium Capacities, or simply use them to increase the size of existing capacities.
 
 For example, with the remaining vCores Contoso could;
 
@@ -149,4 +159,5 @@ And that's basically all you need to know to understand how the licensing for Pr
 I could not create these wonderful solutions and blogs without the great work of others, so here's a list of resources utilized for this blog.
 
 - [Managing Premium Gen2 Capacities](https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-capacity-manage-gen2)
+- [Configure and Manage Capacities in PowerBI Premium](https://learn.microsoft.com/en-us/power-bi/enterprise/service-admin-premium-manage)
 - [Guy in a Cube - What is vCore Pooling?](https://guyinacube.com/2019/09/12/power-bi-premium-what-is-v-core-pooling/)
