@@ -179,7 +179,7 @@ Ok so let us recap.
 
 So how do these licenses interact?  This is where the simplicity magic happens:
 
-![LicensingMatrix](\assets\images\PBI%20Licensing%20Matrix.png)
+![LicensingMatrix](\assets\images\PBI%20LIcensing%20Matrix.png)
 
 ## Conclusion
 
