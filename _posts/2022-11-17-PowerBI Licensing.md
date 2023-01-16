@@ -92,7 +92,7 @@ Each user will have one of three license types:
 |------------|-----------|-----|
 |[PowerBI Free](https://learn.microsoft.com/en-us/power-bi/fundamentals/service-features-license-type#free-per-user-license)| These licenses are granted automatically to users in your AAD who log in to PowerBI, either by going to the service themselves or by following a Share link they receive.   Free users are given a "My Workspace" where they can upload/publish reports for learning and testing purposes which only they can access, but in general, Free users cannot edit or publish reports for organizational use (i.e. into App Workspaces). | Free|
 |[PowerBI Pro](https://learn.microsoft.com/en-us/power-bi/fundamentals/service-features-license-type#pro-license)| Pro users have the ability to publish reports to App Workspaces, edit reports, create dataflows and datamarts, etc.  Anyone in your organization that should be creating or editing content that will be shared with others will require a Pro (or PPU) license. | $9.99|
-|[PowerBI Premium Per User (PPU)](https://learn.microsoft.com/en-us/power-bi/fundamentals/service-features-license-type#premium-per-user-ppu-license)| PPU users are similar to pro users in their capabilities (publish, share, edit, etc.), however they also have access to premium features which would including things like; Paginated Reports, AI functions, larger models, deployment pipelines and more.  Premium Per User licensed users can edit/publish/save/etc. all reports they have access to in **ANY** type of workspace. | $20 (or Pro plus a $10 addon)|
+|[PowerBI Premium Per User (PPU)](https://learn.microsoft.com/en-us/power-bi/fundamentals/service-features-license-type#premium-per-user-ppu-license)| PPU users are similar to pro users in their capabilities (publish, share, edit, etc.), however they also have access to premium features which would including things like; AI functions, larger models, Enhanced Compute Engine, deployment pipelines and more.  Premium Per User licensed users can edit/publish/save/etc. all reports they have access to in **ANY** type of workspace. | $20 (or Pro plus a $10 addon)|
 
 _Source: [PowerBI Pricing](https://powerbi.microsoft.com/en-us/pricing/)_
 
@@ -153,7 +153,6 @@ As mentioned, you can think of Premium as being dedicated hardware (even though 
 Premium licensing provides access to features that are simply not available in the shared environment.  The list of these features continues to grow, but at time of writing, some of the more popular ones include
 - Large Models (up to 400GB)
 - More frequent dataset refresh rates (48x per day)
-- Paginated Reports
 - Enhanced Compute Engine for Dataflows
 - Datamarts
 - Multi Geo support _(except Premium Per User)_
