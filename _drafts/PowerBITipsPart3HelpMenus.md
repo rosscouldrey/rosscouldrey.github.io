@@ -27,7 +27,7 @@ For this demo I am using the Contoso Sales for PowerBI dataset that is available
 
 But you can also use your own data or report and follow along with this series as none of the enhancements we'll be making to our reports are data dependent.
 
-## 3. Help Menus
+## Help Menus
 
 This tip is really about providing your users with more information about what you're showing them, or how they should be interacting with your report, or even the definition of measures in your report.
 
@@ -59,15 +59,6 @@ Now we need to create 2 bookmarks in our report;
 The final step is simply to create a blank button over top of our "help" button (which is part of our background) and connect that button to our Help Menu bookmark via the actions format option.
 
 And **VOILA** we now have a handy help button that our users can interact with to get a more detailed understanding of our report.
-
-### 4. Custom Tooltips
-
-Custom tooltips allow us to expand the information provided in a visual by creating a report page that will be used as the tooltip.  This provides almost endless possibilities to report developers to improve on out of the box visuals.  Provide your users with more information using custom tooltips.
-
-### 5. Pop out visuals
-
-Some visuals can stand on their own, almost like reports themselves; eg. Key Influencers, Q and A, or Decomposition Tree.
-You can give these their own space by "popping" them into what appears to be their own window in the report.
 
 ## Resources
 

@@ -27,9 +27,10 @@ For this demo I am using the Contoso Sales for PowerBI dataset that is available
 
 But you can also use your own data or report and follow along with this series as none of the enhancements we'll be making to our reports are data dependent.
 
-## Custom Tooltips
+## Pop out visuals
 
-Custom tooltips allow us to expand the information provided in a visual by creating a report page that will be used as the tooltip.  This provides almost endless possibilities to report developers to improve on out of the box visuals.  Provide your users with more information using custom tooltips.
+Some visuals can stand on their own, almost like reports themselves; eg. Key Influencers, Q and A, or Decomposition Tree.
+You can give these their own space by "popping" them into what appears to be their own window in the report.
 
 ## Resources
 

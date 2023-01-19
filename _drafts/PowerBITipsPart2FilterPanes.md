@@ -19,7 +19,7 @@ In the second part of this multi-part blog series on simple tricks to increase t
 
 <!--more-->
 
-If you missed part 1 of this series on using custom backgrounds, be sure to check it out here.
+If you missed part 1 of this series on using custom backgrounds, be sure to check it out here (INSERT LINK).
 
 ## Setup
 For this demo I am using the Contoso Sales for PowerBI dataset that is available for download from Microsoft's site:
