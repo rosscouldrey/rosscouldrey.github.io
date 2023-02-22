@@ -29,19 +29,44 @@ But you can also use your own data or report and follow along with this series a
 
 ## Help Menus
 
-This tip is really about providing your users with more information about what you're showing them, or how they should be interacting with your report, or even the definition of measures in your report.
+This tip is really about providing your users with more information;
+- further details or explanations about what you're showing them with a visual, helping to tell a story
+- how they should be interacting with your report (eg. "Right click and item to drill to details")
+- definitions of measures in your visual/report
+- or anything else you'd want to inform your users about
 
-The idea here is that we provide a "help" button for users that will display information that is otherwise hidden from their site.
+Once again we're focused on providing a maximum amount of information without having to spend valuable canvas space to do it.
 
-In this example the help button is located in the center of the navigation bar in the bottom left of the report page. By clicking the question mark button, the user is presented with some speech bubbles that contain information or instructions about the report;
+There's actually a couple ways of accomplishing this which I'll cover here.
+
+### Built in visual help buttons
+
+If you aren't already aware, PowerBI has a built in functionality that allows you to add help options to visuals using the visual toolbar.  There's actually a lot of options for the toolbar, so be sure to check out all the other toggle switches as you're exploring this option.
+
+There benefits of using this method are:
+1. Built in, no development required
+2. Consistent experience across all PowerBI reports
+
+But there's also a few drawbacks to this method:
+1. Little customization available
+2. Only avialable on the visual itself
+3. 
+
+### Custom help displays
+
+Obviously with custom options like this, you're looking at a little more development work. But I much prefer this method to the built-in method because it provides a lot of flexibility and customization which lets me really make the reports my own.
+
+For this example I've located the help button in the center of the navigation bar in the bottom left of the report page. Once again this is an icon in my background image and I simply place a blank button on top of it to make it appear as a clickable object.
+
+By clicking the question mark button, my user is presented with some speech bubbles that contain information or instructions about the report as demonstrated here;
 
 ![ReportHelpMenu](\assets\images\Report%20Tips%20and%20Tricks\PBI_HelpMenu.png){: .align-left}
 
-The concept is simple, but how is it executed?  Using [bookmarks](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-bookmarks?tabs=powerbi-desktop).  
+The concept is simple, but how is it executed?  Once again its [bookmarks](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-bookmarks?tabs=powerbi-desktop) to the rescue.  If you're reading these posts in order, you've probably started to notice a pattern by now.  
 
 {% include image-gallery.html folder="/assets/images/Report%20Tips%20and%20Tricks/helpmenupics" %}
 
-To implement this example, we've used a single blank picture which we size to cover the entire report page.  We set the transparency to 50% to generate the "faded" look of our report in the background.
+To implement this example, we've used a single blank picture which we size to cover the entire report page.  We set the transparency to 50% to generate the "faded" or "blurred" look of our report in the background.
 
 Next, we create 3 new shapes in PowerBI (here we've used the callout shape) and add the text we want to these shapes.
 

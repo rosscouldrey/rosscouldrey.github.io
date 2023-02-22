@@ -27,52 +27,60 @@ For this demo I am using the Contoso Sales for PowerBI dataset that is available
 
 But you can also use your own data or report and follow along with this series as none of the enhancements we'll be making to our reports are data dependent.
 
-## Filter Panes
+## How to enable users with more filter options while saving precious canvas space.
 
-To keep filters off the page
+Ok so we've all been in this position; our users want to be able to slice (or filter) by a thousand different things (ok, maybe not a thousand, but it definitely feels that way when you're writing out the requirements!).  
+
+The issue is obviously space.  
+
+Our canvas is small, we only have so much real estate available for our visuals, and now our users want us to use up all that valuable space for slicers!!  
+
+There's a few options that we can leverage to help in this scenario;
+
+#### Use visuals for filters
+This is the simplest and most obvious answer to the requirement.  Use the product as it was intended.  PowerBI enables cross filtering and highligthing of visuals, meaning by clicking on an element in one visual, we can filter or cross-highlight the other visuals on our page.m  By strategically creating visuals, we can ensure users have the ability to "slice and dice" on a wide variety of options.  This is often the best solution because it leverages the inbuilt product features and will minimize development effort.
+
+But it doesnt fit every solution.  For one, you may need to filter on items that don't lend themselves well to a visual (for example product ID).  Or there may be just too many filter needs; and adding visuals solely to act as filters would be ill-advised as it will adversely affect performance.
+
+So lets look at some other options.
+
+#### Increase the canvas size.  
+I generally dont recommend this, however when done properly it can be a good solution.  
+
+Why don't I recommend it?  Because it can get out of control.  
+
+As a developer we need to understand that EVERY visual we load will take time to load.  And the more visuals we have, the more time it will take our report to load.  This includes visuals that aren't even visible to the user if we've expanded our canvas size and added scroll bars.  So take caution if you use this approach to ensure the performance of your report is not impacted negatively.
+
+#### Use the "dropdown" option for your slicers.
+This is a very good solution, but it still takes up some space.  So while we can minimize the space the our slicers take using this option, we still need to dedicate space to slicer box, and with a lot of slicers, this can still take up a lot of space.
+
+But there's another reason this is a good solution.  Performance.  In fact, whenever you're using slicers, opt for the dropdown option if possible.  Why?
+
+The slicer needs to run a DAX query to return the values to display.  While its a simple query, its still a query.  And the more of these we have the more queries we'll need to issue.  So what's special about the dropdown format of a slicer?  It turns out it ONLY submits a query when the user selects it.  It doesn't need to know what options are available until a user asks to see them!
+
+So by leveraging this option, we get some space back, but also increase performance.  Double Rainbow!
+
+#### Use filter panes.
+And now we get to the best solution in my opinion.  Filter Panes!  This solution achieves the desired result on both fronts; space and performance.
+
+So how do we make it happen?  Bookmarks of course.
+
+Here's the steps:
+
+1. Create an image to use as your filter pane background and add it to your report.  I suggest using PowerPoint for this (see my previous blog on custom backgrounds)
+2. OPTIONAL - create a blank image that you can use to blur out the rest of the report to make it more obvious the user is in the filter pane experience.
+3. Place your required slicers on the filter pane that you created above.
+4. Create a button that can be used to close the filter pane.
+5. Open the Selection Pane and the Bookmarks pane
+6. Create a new bookmark called "ShowFilters".  Ensure your filter pane image, your blurred image, the close button, and your slicers are visible.  Update the bookmark.
+7. Create a new bookmark called "MainView".  Hide all the above elements and update the bookmark.
+8. Create a button to show your filter pane.  I suggest using custom backgrounds and including an icon for a filter pane in your background. With this method, you simply create a blank button and place it on top of your filter icon.
+9. Create actions to show bookmarks for your buttons.
 
 
-### 3. Help Menus
+And that's it.  You now have a beautiful report that's performant and provides extra functionality and capabilities for your users.
 
-This tip is really about providing your users with more information about what you're showing them, or how they should be interacting with your report, or even the definition of measures in your report.
-
-The idea here is that we provide a "help" button for users that will display information that is otherwise hidden from their site.
-
-In this example the help button is located in the center of the navigation bar in the bottom left of the report page. By clicking the question mark button, the user is presented with some speech bubbles that contain information or instructions about the report;
-
-![ReportHelpMenu](\assets\images\Report%20Tips%20and%20Tricks\PBI_HelpMenu.png){: .align-left}
-
-The concept is simple, but how is it executed?  Using [bookmarks](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-bookmarks?tabs=powerbi-desktop).  
-
-{% include image-gallery.html folder="/assets/images/Report%20Tips%20and%20Tricks/helpmenupics" %}
-
-To implement this example, we've used a single blank picture which we size to cover the entire report page.  We set the transparency to 50% to generate the "faded" look of our report in the background.
-
-Next, we create 3 new shapes in PowerBI (here we've used the callout shape) and add the text we want to these shapes.
-
-Finally, we create a blank button and strech it over the entire report page.  We do this to enable the user to exit the help menu view by clicking anywhere on the canvas.
-
-At this point I will also suggest you group your visuals in the selection pane.  This makes showing/hiding visuals much easier as you can do it at the group level instead of the individual visual level.  In this example I've created a few groups; 
-- **HelpPage**: which contains all the visuals to display when a user cliks the help menu
-- **FilterPane**: which contains all the visuals to display the filter pane
-- **Key Influencers**: which contains all the visuals to display the key influencers popout
-
-Now we need to create 2 bookmarks in our report;
-- [x] The first one will display our main page (or the non-help view).  In this bookmark we'll simply hide all of the items we just added. 
-- [x] The second one will display our help page.  This bookmark should make visible all of the items we just added (using the group, we can simply make our HelpPage group visible)
-
-The final step is simply to create a blank button over top of our "help" button (which is part of our background) and connect that button to our Help Menu bookmark via the actions format option.
-
-And **VOILA** we now have a handy help button that our users can interact with to get a more detailed understanding of our report.
-
-### 4. Custom Tooltips
-
-Custom tooltips allow us to expand the information provided in a visual by creating a report page that will be used as the tooltip.  This provides almost endless possibilities to report developers to improve on out of the box visuals.  Provide your users with more information using custom tooltips.
-
-### 5. Pop out visuals
-
-Some visuals can stand on their own, almost like reports themselves; eg. Key Influencers, Q and A, or Decomposition Tree.
-You can give these their own space by "popping" them into what appears to be their own window in the report.
+Give it a try with your next report!
 
 ## Resources
 

@@ -1,6 +1,6 @@
 ---
 #layout: single
-title: Simple ways to enhance your reports - Part 3 - Help Menus
+title: Simple ways to enhance your reports - Part 4 - Custom Tooltips
 date: 2023-01-08
 author: Ross Couldrey
 comments: true
@@ -15,7 +15,7 @@ excerpt_separator: <!--more-->
 
 ---
 
-Welcome to the third installment of this multi-part blog series on simple tricks to increase the usability of your PowerBI reports. In this blog I'm going to demonstrate how to build custom help menus for your report which you can use to increase the end user experience!
+Welcome to the fourth installment of this multi-part blog series on simple tricks to increase the usability of your PowerBI reports. In this blog I'm going to demonstrate how to leverage custom tooltips to your visuals to add some extra information and panache!
 
 <!--more-->
 

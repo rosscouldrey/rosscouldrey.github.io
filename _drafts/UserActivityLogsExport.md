@@ -14,3 +14,5 @@ toc_icon: "bars"
 excerpt_separator: <!--more-->
 
 ---
+
+This blog demonstrates how to export the User Activity logs for long term retention

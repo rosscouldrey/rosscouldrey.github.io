@@ -1,6 +1,6 @@
 ---
 #layout: posts
-title: Enabling Keyword Searches in PowerBIgit 
+title: Enabling Keyword Searches in PowerBI 
 date: 2022-03-31
 author: Ross Couldrey
 comments: true
@@ -12,3 +12,5 @@ tags: [Tag1, Tag2]
 #toc_label: "Skip to section"
 excerpt_separator: <!--more-->
 ---
+
+This blog post walks through how to leverage cognitive services and dynamic M query parameters to build key word searches in PowerBI.
