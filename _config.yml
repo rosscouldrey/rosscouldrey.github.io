@@ -50,7 +50,7 @@ analytics:
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : "/assets/images/RossAvatar.png"
-  bio              : "I am a [Cloud Solution Architect (CSA)](https://www.microsoft.com/en-us/leap/pathways/cloud-solution-architect/) working at [Microsoft](https://www.microsoft.com/en-ca/), focused on Data and AI with a keen interest in anything PowerBI related."
+  bio              : "I am a [Cloud Solution Architect (CSA)](https://www.microsoft.com/en-us/leap/pathways/cloud-solution-architect/) working at [Microsoft](https://www.microsoft.com/en-ca/), focused on Data and AI with a subject matter expertise in PowerBI and Microsoft Fabric."
   location         : "Great White North"
   links:
   - label: "GitHub"
