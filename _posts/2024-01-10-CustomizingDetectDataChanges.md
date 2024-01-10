@@ -59,11 +59,13 @@ To use sales data totals as a detect data changes option, we need to follow thes
 
 Let's go through each step in detail.
 
-**Note:**In case you want to follow along with this example, I am using the ContosoRetailDW sample available from [Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=18279)
-{: .notice--alert}
+**Note** <br>
+If you want to follow along with this example, I am using the ContosoRetailDW sample available from [Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=18279)
+{: .notice--info}
 
 ### Step 1: Configure incremental refresh with detect data changes
-I’m going to skip the details here since there’s lots of documentation available on how to configure this, including but not limited to the Microsoft docs: Incremental refresh for semantic models and real-time data in Power BI - Power BI | Microsoft Learn
+I’m going to skip the details here since there’s lots of documentation available on how to configure this, including but not limited to the [Microsoft docs](https://www.microsoft.com/en-us/download/details.aspx?id=18279)
+
 From the FactOnlineSales table, we can configure our Incremental refresh as follows:
 
 ![IncrementalRefreshSetup](/assets/images/CustomDetectDataChange/IncrementalRefreshPolicy.png)
