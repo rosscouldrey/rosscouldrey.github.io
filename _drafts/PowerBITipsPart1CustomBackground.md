@@ -17,13 +17,17 @@ excerpt_separator: <!--more-->
 
 Presenting useful data is as much art as it is science.  As an analyst we want our reports to be attractive, relevant, trustworthy and ultimately useful for all readers.
 <!--more-->
-In this multi-part blog series I'm going to walk through some quick and simple tricks that can help you increase the usability of your PowerBI reports without cluttering your canvas! 
+In this multi-part blog series I'm going to walk through some of my favourite quick and simple tricks that can help you increase the usability of your PowerBI reports without cluttering your canvas! 
 
 My final sample file is available in my GitHub site for your reference.
 
 <div style="text-align: center;">
 <a href = "https://github.com/rosscouldrey/PBIDemos/blob/main/Report%20Design/NextLevelReport.pbix" class="btn btn--success">Get the Sample</a>
 </div>
+
+Special shout outs to:
+- Chris Hamill at [Alluring Analytics](https://alluringbi.com/) where I got my background for this demo.
+- Adam Saxton at [Guy In a Cube](https://www.youtube.com/watch?v=k9LGRfREuIk)
 
 ## Set Up
 For this demo I am using the Contoso Sales for PowerBI dataset that is available for download from Microsoft's site:
