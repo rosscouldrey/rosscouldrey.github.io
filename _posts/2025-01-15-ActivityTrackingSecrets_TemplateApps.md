@@ -31,7 +31,9 @@ Ever seen the same report ID show up multiple time in the same tenant when revie
 - How can that be?  
 - Aren't report IDs unique?  
 
-Well it turns out there are some nuances with how these are reported.  I explain how Template Apps play a role in this phenomenon in this blog post!  Read on.
+Well it turns out there are some nuances with how these are reported.  I explain how Template Apps play a role in this phenomenon in this blog post!  
+
+Read on.
 <!--more-->
 
 ### Introduction
@@ -47,11 +49,17 @@ When they filtered their long-term logs on Report ID, to their amazement, they s
 
 ### So what happened?
 The root of their issue was users installing Apps from the store and a subsequent misunderstanding of the returned fields from the User Activity logs.
-As the customer was collecting and storing their logs, they were using the ReportId field returned by the User Activities and storing it in a ReportId field in their storage.  On the surface this seems logical.  However, this is an incorrect way to interpret the logs for these installed Apps.
+As the customer was collecting and storing their logs, they were using the ReportId field returned by the User Activities and storing it in a ReportId field in their storage.   On the surface this seems logical.  
+
+However, this is an incorrect way to interpret the logs for these installed Apps.
 
 Let me explain;
+
 When an app creator creates a template app for distribution through the service, they provide a report (or many reports) as part of their app.  When you install an app, the service uses that template report to create a new copy of the report for this instance of the app.  Pay attention to the wording “this instance”.
-Great.  So, what does that mean for the User Activities Log?  As it turns out – a lot. 
+
+Great.  So, what does that mean for the User Activities Log?
+As it turns out – a lot. 
+
 Let’s start by installing the GitHub app in our tenant.  The resulting Ids are below:
 
 >WorkspaceId| 542cab33-XXXX-XXXX-XXXX-ad29c038e923
@@ -62,10 +70,11 @@ Let’s start by installing the GitHub app in our tenant.  The resulting Ids are
 
 These are the IDs we would expect to see in our activity log for actions like “ViewReport”.
 There are 2 ways a user can view this report;
-1)	Through the App itself
-2)	By navigating to the workspace and opening the report directly.
 
-And it turns out… it matters which you opt to do.  So lets investigate these two methods.
+1.	Through the App itself
+2.	By navigating to the workspace and opening the report directly.
+
+And as we discovered … it matters which you opt to do.  So lets investigate these two methods.
 
 In the below activity a user has accessed a report from within the app.
 
@@ -84,7 +93,7 @@ Now we see the _ReportId_ that we expected is reported in the **AppReportId** fi
 
 Ok. But then what is ID in the ReportId field?  
 
-Well it turns out that ID references the template report that was used to build the app.  I’ve confirmed this ID will be the same across all installs of the App, not only within your tenant, but even across tenants.  You can do the same by installing the Github app in your tenant and checking the logs.  You should see the ID: 
+As far as I can tell that ID references the template report that was used to build the app.  I’ve confirmed this ID will be the same across all installs of the App, not only within your tenant, but even across tenants.  You can do the same by installing the Github app in your tenant and checking the logs.  You should see the ID: 
 >11deec96-d80b-4130-b9ce-03de217d87a7 
 
 But back to my customer.
@@ -99,7 +108,8 @@ There are a few things you could do to resolve this.  But the key is understandi
 You could do this when you capture the logs, or you could do this when you report on the logs.  So now you know.  And GI Joe used to say when i was a kid; 
 >**“Knowing is half the battle”**
 
-So, are we done?  Well we could be.  But....
+So, are we done?  Well we could be.  But...
+
 If you recall, I started out by saying they also saw multiple CreateReport activities which demonstrated a similar behaviour.  Of course, the root case was the same, but I wanted to look at these for some fun and further evidence of what was happening.
 
 With the help of my colleague Jocelyn Zastrow we reproduced this in our own tenant.  Here are the results of the two of us installing the GitHub app in the same tenant.  You can see they get installed into two different workspaces, yet the ReportId is the same for both.
