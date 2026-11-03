@@ -1,0 +1,78 @@
+.post-disclaimer {
+  margin: 0 0 1.5em;
+  padding: 0.8em 1em;
+  border-left: 3px solid #8eaaaa;
+  border-radius: 0.2em;
+  background: rgba(255, 255, 255, 0.04);
+  color: #c8cbd0;
+  font-size: max(0.8em, 14px);
+  line-height: 1.6;
+}
+
+.post-disclaimer p {
+  margin: 0;
+}
+
+.post-body .screenshot-link {
+  cursor: zoom-in;
+}
+
+.post-body .screenshot-link:focus-visible {
+  outline: 3px solid #a1d1d1;
+  outline-offset: 4px;
+}
+
+.post-body figcaption {
+  margin-top: 0.5em;
+  color: #c8cbd0;
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+.toc__toggle {
+  display: none;
+}
+
+@media (max-width: 63.999em) {
+  .sidebar__right .toc[data-collapsible] header h4 {
+    display: none;
+  }
+
+  .sidebar__right .toc[data-collapsible] .toc__toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .toc__toggle::after {
+    content: "+";
+  }
+
+  .toc__toggle[aria-expanded="true"]::after {
+    content: "-";
+  }
+
+  .toc__toggle:focus-visible {
+    outline: 3px solid #a1d1d1;
+    outline-offset: -3px;
+  }
+
+  .sidebar .author__avatar img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+  }
+
+  .sidebar .author__bio {
+    display: none;
+  }
+}

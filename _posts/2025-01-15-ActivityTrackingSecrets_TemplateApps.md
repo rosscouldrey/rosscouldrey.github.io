@@ -78,7 +78,7 @@ And as we discovered … it matters which you opt to do.  So lets investigate th
 
 In the below activity a user has accessed a report from within the app.
 
-![viewreportfromapp](/assets/images/ActivityTrackingAppID/ViewReportFromApp.png)
+{% include figure image_path="/assets/images/ActivityTrackingAppID/ViewReportFromApp.png" alt="ViewReport activity when opening the report through the installed app" caption="Opening the report through the app: WorkspaceId, ReportId and AppId match the installed app. Select the image to enlarge." %}
 
 This looks great!  The WorkspaceId, the ReportId, and the AppId are as we expected. 
 
@@ -87,7 +87,7 @@ One thing I’ll point out here is that the presence of the AppID field tells us
 
 But what if the user accessed the report from the workspace instead of the App?   Well it turns out, the Ids change a little bit…lets look at what happens:
 
-![viewreportfromworkspace](/assets/images/ActivityTrackingAppID/ViewReportFromWorkspace.png)
+{% include figure image_path="/assets/images/ActivityTrackingAppID/ViewReportFromWorkspace.png" alt="ViewReport activity when opening the report directly from the workspace" caption="Opening the report from the workspace: look for the installed report's ID in AppReportId rather than ReportId. Select the image to enlarge." %}
 
 Now we see the _ReportId_ that we expected is reported in the **AppReportId** field, instead of the **ReportId** field.
 
@@ -114,9 +114,9 @@ If you recall, I started out by saying they also saw multiple CreateReport activ
 
 With the help of my colleague Jocelyn Zastrow we reproduced this in our own tenant.  Here are the results of the two of us installing the GitHub app in the same tenant.  You can see they get installed into two different workspaces, yet the ReportId is the same for both.
  
-![Createreport](/assets/images/ActivityTrackingAppID/CreateReportRC.png)
+{% include figure image_path="/assets/images/ActivityTrackingAppID/CreateReportRC.png" alt="CreateReport activity for Ross's installation of the GitHub template app" caption="First installation: compare the highlighted ReportId with the second installation below. Select the image to enlarge." %}
 
-![Createreport2](/assets/images/ActivityTrackingAppID/CreateReportJZ.png)
+{% include figure image_path="/assets/images/ActivityTrackingAppID/CreateReportJZ.png" alt="CreateReport activity for Jocelyn's installation of the GitHub template app" caption="Second installation: ReportId is the same, but AppReportId identifies a different installed report. Select the image to enlarge." %}
 
 Check out the green boxes in those screenshots.  The ReportID is the same, despite being in different workspaces!
 {: .notice--success}

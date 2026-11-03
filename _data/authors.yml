@@ -1,0 +1,12 @@
+Ross Couldrey:
+  name: Ross Couldrey
+  avatar: "/assets/images/RossAvatar.png"
+  bio: "I am a Sr. Technical Program Manager in the Fabric organization at [Microsoft](https://www.microsoft.com/), sharing practical guidance on Microsoft Fabric and Power BI."
+  location: Great White North
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/rosscouldrey
+    - label: LinkedIn
+      icon: fab fa-linkedin
+      url: https://www.linkedin.com/in/rosscouldrey

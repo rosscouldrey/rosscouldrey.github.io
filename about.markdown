@@ -4,20 +4,23 @@ title: About
 permalink: /about/
 ---
 
-Welcome to my GitHub Pages Blog site powered by [jekyllrb.com](https://jekyllrb.com/).
+You like data? I like data! We should be friends.
 
-I am a Microsoft Employee and a data enthusiast who blogs about tips and tricks for Microsoft data products; focused mostly on PowerBI and Synapse Analytics.
+I am a **Sr. Technical Program Manager in the Fabric organization at Microsoft**, and a data enthusiast who shares practical tips and walkthroughs for Microsoft Fabric and Power BI.
 
-Please feel free to check out my github page for more code samples and architectures;
-[RossCouldrey @ Github](https://github.com/rosscouldrey)
+## What's this all about?
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+From time to time I'm asked questions by customers, colleagues and friends. Usually these questions aren't unique, and the answers can help others too.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Other times, I find interesting ways to use the products I'm working on or solve a problem that others might encounter.
 
+This blog is my attempt to document those lessons so others can learn and reuse them. It's a way to give back to a community that has helped me grow and learn over the years.
 
-[jekyll-organization]: https://github.com/jekyll
+**After all, knowledge should be free.**
+
+## Find me elsewhere
+
+- [GitHub: code samples and architectures](https://github.com/rosscouldrey)
+- [LinkedIn](https://www.linkedin.com/in/rosscouldrey)
+
+This site is powered by [Jekyll](https://jekyllrb.com/) and the [Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/).
