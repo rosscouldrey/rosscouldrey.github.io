@@ -82,6 +82,7 @@ Computer engineer turned analytics leader who bridges platform engineering and t
 - **Contributor to *Guy in a Cube*,** two Power BI videos with 100K+ combined views:
   - [Publish from Power BI Desktop for External Users](https://www.youtube.com/watch?v=x1xMxRXQ2So)
   - [Mastering Dynamic M Parameters for Multiselect in Power Query](https://www.youtube.com/watch?v=338Fm-eSbQU) (original idea and prototype)
+- **Microsoft Learn contributor:** wrote the original guidance and scripts for [*Use service tags with Power BI*](https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/service-premium-service-tags) (2021), still published in the Fabric documentation
 - **Finalist,** 2018 INFORMS O.R. & Analytics Student Team Competition
 
 ## Selected Projects
