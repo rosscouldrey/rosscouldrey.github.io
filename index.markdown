@@ -12,4 +12,4 @@ You like data?  I like data!  We should be friends.
 
 Practical tips, walkthroughs and lessons learned with Microsoft Fabric and Power BI. **After all, knowledge should be free.**
 
-Browse the latest posts below, or [learn more about me]({{ '/about/' | relative_url }}).
+Browse the latest posts below, [learn more about me]({{ '/about/' | relative_url }}), or [view my resume]({{ '/resume/' | relative_url }}).

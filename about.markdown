@@ -8,6 +8,8 @@ You like data? I like data! We should be friends.
 
 I am a **Sr. Technical Program Manager in the Fabric organization at Microsoft**, and a data enthusiast who shares practical tips and walkthroughs for Microsoft Fabric and Power BI.
 
+[View my resume]({{ '/resume/' | relative_url }}) for my experience, education, and certifications.
+
 ## What's this all about?
 
 From time to time I'm asked questions by customers, colleagues and friends. Usually these questions aren't unique, and the answers can help others too.
